@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>两个图片切换</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        body {
+            padding: 100px;
+        }
+
+    
+        button {
+            color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0.75em 1.5em;
+            margin-left: 6em;
+            background-color: #630030;
+            border: 0 #829
+                606 solid;
+            outline: 0;
+            border-radius: 4px;
+            box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/img01.jpg" alt="" id="img">
+    <br>
+    <button id="btn"><img src="img/sp0.jpeg"></button>
+    <button id="bt">2</button>
+    <script>
+        var img = document.getElementById('img');
+        var btn = document.getElementById('btn');
+        var bt  = document.getElementById('bt');
+        btn.setAttribute('onmouseover',"test()");
+        bt.setAttribute('onmouseover',"test1()");
+        function test(){
+            img.setAttribute('src',"img/pp0.jpeg");
+            
+        }
+         function test1(){
+             img.setAttribute('src',"img/pp1.jpeg");
+         }
+    </script>
+</body>
+
+</html>
+
+
+
+
